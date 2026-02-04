@@ -28,6 +28,7 @@ public class Locators {
         //WebElement Pass=driver.findElement(By.name("password"));
        // Pass.sendKeys("admin123");
        WebElement new1= driver.findElement(By.xpath("//img[@alt='company-branding']"));
+
       boolean status= new1.isDisplayed();
 
 

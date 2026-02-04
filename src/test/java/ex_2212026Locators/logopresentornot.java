@@ -13,7 +13,10 @@ public class logopresentornot {
         driver.get("https://www.google.com/");
 
 
-        WebElement logo=driver.findElement(By.className("k1zIA"));
+        driver.manage().window().maximize();
+
+
+        WebElement logo=driver.findElement(By.className("lnXdpd"));
 
         boolean status=logo.isDisplayed();
 
