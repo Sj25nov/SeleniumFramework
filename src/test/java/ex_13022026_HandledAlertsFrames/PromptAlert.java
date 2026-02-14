@@ -8,24 +8,22 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class Alerts {
+public class PromptAlert {
+    public static void main(String[] args) throws InterruptedException {
 
-    public static void main(String[] args) {
+
+
         WebDriver driver=new ChromeDriver();
 
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         driver.get("https://the-internet.herokuapp.com/javascript_alerts");
-//open normal alert box
-        driver.findElement(By.xpath("//button[normalize-space()='Click for JS Alert']")).click();
-Alert myalert=driver.switchTo().alert();
-myalert.accept();
 
-WebElement isdisplay=driver.findElement(By.xpath("//p[@id='result']"));
-        //Normal Alert with OK Button
-isdisplay.isDisplayed();
-        System.out.println(isdisplay.getText());
 
+        driver.findElement(By.xpath("//button[normalize-space()='Click for JS Prompt']")).click();
+Thread.sleep(10000);
+        Alert NewAlert=driver.switchTo().alert();
+        System.out.println(NewAlert.getText());
     }
 }
