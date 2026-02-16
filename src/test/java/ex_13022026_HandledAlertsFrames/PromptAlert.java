@@ -24,6 +24,18 @@ public class PromptAlert {
         driver.findElement(By.xpath("//button[normalize-space()='Click for JS Prompt']")).click();
 Thread.sleep(10000);
         Alert NewAlert=driver.switchTo().alert();
-        System.out.println(NewAlert.getText());
+        System.out.println("Text MSG On Alert--->"+NewAlert.getText());
+         NewAlert.sendKeys("Welcome SJ");
+
+         NewAlert.accept();
+
+        String Result= driver.findElement(By.xpath("//p[@id='result']")).getText();
+
+        if(Result.contains("Welcome SJ")){
+            System.out.println("Test CAse PAssed");
+        }else {
+            System.out.println("Test CAse Rejected");
+        }
+
     }
 }
