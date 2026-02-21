@@ -1,8 +1,7 @@
-package ex_22012026;
+package ex_22012026_HowToHandledAutoSuggestions;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
 public class SeleniumBasicCode {

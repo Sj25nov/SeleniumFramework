@@ -1,4 +1,4 @@
-package ex_22012026;
+package ex_22012026_HowToHandledAutoSuggestions;
 
 /*
  Test case
