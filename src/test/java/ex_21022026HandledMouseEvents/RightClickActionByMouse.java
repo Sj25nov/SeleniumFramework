@@ -1,5 +1,6 @@
 package ex_21022026HandledMouseEvents;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,18 +10,23 @@ import org.openqa.selenium.interactions.Actions;
 import java.time.Duration;
 
 public class RightClickActionByMouse {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
 
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.get("https://www.orangehrm.com/");
+        driver.get("https://swisnl.github.io/jQuery-contextMenu/demo.html");
 
         driver.manage().window().maximize();
-        WebElement MouseHovering = driver.findElement(By.xpath("//a[normalize-space()='Solutions']"));
-        WebElement solutions=driver.findElement(By.xpath("/html[1]/body[1]/nav[1]/div[1]/div[1]/ul[1]/li[2]/div[1]/div[1]/div[1]/div[2]/a[1]"));
-        Actions MouseHover=new Actions(driver);
+        WebElement Rightclick = driver.findElement(By.xpath("//span[@class='context-menu-one btn btn-neutral']"));
+//Rightclick
+Actions DoActions=new Actions(driver);
 
-
+DoActions.contextClick(Rightclick).build().perform();
+Thread.sleep(2000);
+WebElement Clickoncopy=driver.findElement(By.xpath("//span[normalize-space()='Copy']"));
+Clickoncopy.click();
+Thread.sleep(2000);
+driver.switchTo().alert().accept();
     }
 }
