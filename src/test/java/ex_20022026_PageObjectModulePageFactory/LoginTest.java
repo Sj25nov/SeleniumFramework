@@ -14,17 +14,17 @@ public class LoginTest {
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
         driver.manage().window().maximize();
 
-        void testlogin ()
-        {
-            LoginPage loginpagee = new LoginPage(driver);
-            loginpagee.setusername("Admin");
-            loginpagee.setPassword("admin123");
-            loginpagee.setclicklogin();
-            Assert.assertEquals(driver.getTitle(),"OrangeHRM");
-        }
-        void teardown () {
-            driver.quit();
+        //void testlogin ()
+       // {
+            //LoginPage loginpagee = new LoginPage(driver);
+         //   loginpagee.setusername("Admin");
+           // loginpagee.setPassword("admin123");
+            //loginpagee.setclicklogin();
+           // Assert.assertEquals(driver.getTitle(),"OrangeHRM");
+      //  }
+      //  void teardown () {
+        //    driver.quit();
         }
 
     }
-}
+

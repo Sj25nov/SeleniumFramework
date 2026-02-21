@@ -27,7 +27,7 @@ By Username=(By.xpath("//input[@placeholder='Username']"));
     public void setPassword(String Password){
         driver.findElement(Passwordna).sendKeys(Password);
     }
-    public void setclicklogin(String Click){driver.findElement(click).click();}
+    public void setclicklogin(){driver.findElement(click).click();}
 
 
 }
