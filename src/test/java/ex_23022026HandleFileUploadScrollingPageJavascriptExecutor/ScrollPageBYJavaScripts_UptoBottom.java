@@ -1,4 +1,0 @@
-package ex_23022026HandleFileUploadScrollingPageJavascriptExecutor;
-
-public class ScrollPageBYJavaScripts_UptoBottom {
-}
