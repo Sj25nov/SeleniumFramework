@@ -22,7 +22,8 @@ TakesScreenshot TS=(TakesScreenshot)driver;
 
 File sourceFile=TS.getScreenshotAs(OutputType.FILE);
 
-File TargetFile=new File(System.getProperty("user.dir")+"\\Screenshot.png");
+File TargetFile=new File(System.getProperty("user.dir")+"\\NewAssignmet.png");
+//File targetfile=new File(System.getProperty("user.dir")+"\\Screenshot.png");
 //File TargetFile=new File("G:\\AutomationCourseUdemyNotes\\ScreenshotsAutomation.png");
 sourceFile.renameTo(TargetFile);
 
