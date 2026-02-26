@@ -15,6 +15,7 @@ public class EnabledChromeExtensions {
         options.addExtensions(file);
         WebDriver driver = new ChromeDriver(options);
 
+
         driver.get("https://text-compare.com/");
 
     }
