@@ -10,17 +10,17 @@ package ex_03032026_TestNGFrameworkHandsOn;
 import org.testng.annotations.Test;
 
 public class FirstTestCase {
-    @Test
+    @Test(priority=1)
     void openbrowser()
     {
         System.out.println("Opening Browser");
     }
-    @Test
+    @Test(priority = 2)
     void LoggedIntoPage()
     {
         System.out.println("LoggedIntoPage");
     }
-    @Test
+    @Test(priority = 3)
 void LoggedOutFromPage() {
         System.out.println("LoggedOutFromPage");
 }
