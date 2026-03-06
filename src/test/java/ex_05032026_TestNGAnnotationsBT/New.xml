@@ -6,6 +6,7 @@
             <class name="ex_05032026_TestNGAnnotationsBT.BeforeAfterTestAnnotation1"/>
             <class name="ex_05032026_TestNGAnnotationsBT.BeforeAfterTestAnnotation2"/>
             <class name="ex_05032026_TestNGAnnotationsBT.BeforeAfterTestAnnotation3"/>
+            <class name="ex_05032026_TestNGAnnotationsBT.AllAnoations"/>
 
         </classes>
 
