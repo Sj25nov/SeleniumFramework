@@ -11,5 +11,17 @@ public class HardAssertions {
   Assert.assertEquals("123","123");
 
 }
+@Test
+void Test(){
+
+    Assert.assertNotEquals(127,1414);
+}
+@Test
+void newTest() {
+
+    Assert.assertTrue(true);
+}
 
 }
+
+
