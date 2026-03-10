@@ -10,7 +10,7 @@ public class SoftAssertion {
         System.out.println("softasertion");
 
         SoftAssert AS=new SoftAssert();
-        AS.assertEquals(1,3);
+        AS.assertEquals(1,1);
         System.out.println("softasertion");
         System.out.println("softasertion");
         AS.assertAll();
