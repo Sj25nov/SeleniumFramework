@@ -46,7 +46,7 @@ public class DataProviderMethods {
     }
 
 
-    @DataProvider(name = "dp")
+    @DataProvider(name = "dp",indices={0,1})
     Object[][] loginData() {
 
         Object data[][] = {
