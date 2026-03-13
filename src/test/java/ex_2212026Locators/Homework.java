@@ -9,7 +9,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import java.util.List;
 
 public class Homework {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         WebDriver driver = new ChromeDriver();
 
@@ -21,8 +21,8 @@ public class Homework {
 
         List<WebElement>images=driver.findElements(By.tagName("img"));
         System.out.println("The Total Cout of Images is--->"+images.size());
-
-        driver.findElement(By.linkText("Samsunggalaxys6")).click();
+Thread.sleep(1000);
+        driver.findElement(By.linkText("Samsung galaxy s6")).click();
         System.out.println("code Executed Successfully");
 
         driver.quit();
