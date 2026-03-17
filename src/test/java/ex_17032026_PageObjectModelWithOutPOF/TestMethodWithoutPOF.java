@@ -2,6 +2,7 @@ package ex_17032026_PageObjectModelWithOutPOF;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -24,6 +25,8 @@ public class TestMethodWithoutPOF {
         PL.setpassword("Admin");
         PL.setusername("admin");
         PL.clickonlogin();
+ Assert.assertEquals(driver.getTitle(),"OrangeHRM");
+            System.out.println(driver.getTitle());
         }
 
         @AfterClass
