@@ -1,8 +1,7 @@
-package ex_17032026_PageObjectModel;
+package ex_17032026_PageObjectModelWithOutPOF;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 public class PageObjectModelWithoutPOF {
 
